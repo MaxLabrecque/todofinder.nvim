@@ -1,8 +1,7 @@
 local M = {}
 
 function Todo()
-	print("TODO: implement")
-	local files = vim.api.nvim_exec("grep TODO -lr *")
+	local files = vim.cmd("grep TODO -lr * --exclude='node_modules/*'")
 	print(files)
 end
 
