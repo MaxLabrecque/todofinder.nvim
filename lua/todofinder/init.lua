@@ -1,12 +1,11 @@
 local M = {}
 
-function M.setup(opts)
-	opts = opts or {}
+function Todo()
+	print("TODO: implement")
+end
 
-	vim.keymap.set("n", "<Leader>p",
-		function()
-			print("Hello from todofinder!")
-		end)
+function M.setup()
+	vim.api.nvim_create_user_command("FindTodo", Todo, {})
 end
 
 return M
