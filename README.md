@@ -13,7 +13,7 @@ You can install the plugin with your preffered package manager:
 ### [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
-    {
+	{
 		'MaxLabrecque/todofinder.nvim',
 		dependencies = { 'nvim-telescope/telescope.nvim' }
 	},
