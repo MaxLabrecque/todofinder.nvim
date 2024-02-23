@@ -4,7 +4,7 @@
 
 ![Usage](assets/usage.png)
 
-## 📦 Installation
+# 📦 Installation
 
 You can install the plugin with your preffered package manager:
 
@@ -17,7 +17,7 @@ You can install the plugin with your preffered package manager:
 	},
 ```
 
-## 🚀 Usage
+# 🚀 Usage
 Only need to enter the command and it do everything else.
 ```
 :TodoFinder
