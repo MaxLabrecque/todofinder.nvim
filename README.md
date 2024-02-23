@@ -1,12 +1,10 @@
-# todofinder.nvim
-
-## What is TodoFinder ?
+# What is TodoFinder ?
 
 <code>TodoFinder</code> is a tool to easily view everywhere you have write some todo in your code using Telescope find_files.
 
 ![Usage](assets/usage.png)
 
-## Installation
+## 📦 Installation
 
 You can install the plugin with your preffered package manager:
 
