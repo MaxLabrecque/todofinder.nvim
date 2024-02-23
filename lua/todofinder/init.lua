@@ -1,7 +1,9 @@
 local M = {}
 
 function Todo()
-	local files = vim.fn.systemlist("grep TODO -lr *")
+	local reg = '[T-t][O-o][D-d][O-o]'
+	local command = "grep " .. reg .. " -lr *"
+	local files = vim.fn.systemlist(command)
 
 	if #files == 0 then
 		print("No TODOs found")
@@ -9,8 +11,7 @@ function Todo()
 	end
 
 	-- Open telescope with the files
-	require('telescope.builtin').find_files({ cwd = vim.fn.getcwd(), prompt_title = "TODOs", find_command = { 'grep', '-rl', 'TODO', '.' } })
-
+	require('telescope.builtin').find_files({ cwd = vim.fn.getcwd(), prompt_title = "TODOs", find_command = { 'grep', '-rl', reg, '.' } })
 
 	-- Add to buffer list
 	local buf_list = {}
